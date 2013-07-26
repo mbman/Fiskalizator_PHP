@@ -84,11 +84,13 @@ class Certificate
     }
 
     public function getSerialNumber() {
-        return $this->getCertData()['serialNumber'];
+        $cert = $this->getCertData();
+        return $cert['serialNumber'];
     }
 
     public function getIssuer() {
-        return $this->getCertData()['issuer'];
+        $cert = $this->getCertData();
+        return $cert['issuer'];
     }
 
     /**
