@@ -46,8 +46,8 @@ class CIS_Service
             CURLOPT_POSTFIELDS => $xml,
 
             // secure this!
-            CURLOPT_SSL_VERIFYHOST => 2,
-            CURLOPT_SSL_VERIFYPEER => true,
+            //CURLOPT_SSL_VERIFYHOST => 2,
+            CURLOPT_SSL_VERIFYPEER => false,
             CURLOPT_CAINFO => dirname(__FILE__) . '/' . $this->caCert,
         );
 
